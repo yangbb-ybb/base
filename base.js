@@ -126,7 +126,15 @@ class Base{
     arrayContains(target, item){
         return target.indexOf(item) > -1;//能检测出 数组中是否拥有当前的需要 测试的 值
     }
-    
+    /**
+     * 工具类
+     * 一些 使用的基础函数操作
+     * */
+    //对一个数 进行取精度 操作
+    //num需要 你去计算的数字 s精度操作
+    toInt(num,s=16){
+        return Number(num.toPrecision(s));
+    }
     /**
      * 下面是es6  里面的字符串新增的 函数
      * 其实 没有太多的  作用
